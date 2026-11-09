@@ -16,6 +16,6 @@ Fixes:
 This project is unaffiliated with GeyserMC, and this port is not supported/made by Camotoy. However, this mod is made to work with Geyser.
 If you need help/support, please use the "issues" tab here to report issues, or join the support discord: https://discord.gg/nzrJbNMR9S
 
-Currently supported versions: 1.21 (Fabric/NeoForge); older builds are available on Modrinth (1.19-1.20.6)
+Currently supported versions: 26.3 (Fabric/NeoForge); older builds are available on Modrinth (1.19-26.1)
 
 Download on [Modrinth](https://modrinth.com/mod/hurricane)

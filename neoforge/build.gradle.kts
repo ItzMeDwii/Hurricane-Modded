@@ -22,6 +22,12 @@ dependencies {
     include(libs.configurate.core)
     include(libs.geantyref)
     include(libs.typesafe)
+
+    // The mixin config plugin reads hurricane.conf at class-init time, so these must exist in dev runs too.
+    localRuntime(libs.configurate.hocon)
+    localRuntime(libs.configurate.core)
+    localRuntime(libs.geantyref)
+    localRuntime(libs.typesafe)
 }
 
 tasks {

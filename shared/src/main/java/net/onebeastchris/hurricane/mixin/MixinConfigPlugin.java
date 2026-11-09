@@ -27,8 +27,8 @@ public class MixinConfigPlugin implements IMixinConfigPlugin {
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
         return switch (mixinClassName) {
             case "net.onebeastchris.hurricane.mixin.BambooBlockMixin" -> config.isBamboo();
-            case "net.onebeastchris.hurricane.mixin.PointedDripstoneBlockMixin" -> config.isPointedDripstone();
-            case "net.onebeastchris.hurricane.mixin.ServerPlayerInteractionManagerMixin" -> config.isSuppressWarnings();
+            case "net.onebeastchris.hurricane.mixin.SpeleothemBlockMixin" -> config.isPointedDripstone();
+            case "net.onebeastchris.hurricane.mixin.ServerPlayerGameModeMixin" -> config.isSuppressWarnings();
             default -> true;
         };
     }

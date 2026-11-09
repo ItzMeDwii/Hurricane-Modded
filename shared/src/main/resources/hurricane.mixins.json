@@ -4,8 +4,8 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "BambooBlockMixin",
-    "PointedDripstoneBlockMixin",
-    "ServerPlayerInteractionManagerMixin"
+    "SpeleothemBlockMixin",
+    "ServerPlayerGameModeMixin"
   ],
   "plugin": "net.onebeastchris.hurricane.mixin.MixinConfigPlugin",
   "injectors": {
