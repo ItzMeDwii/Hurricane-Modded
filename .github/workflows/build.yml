@@ -22,17 +22,19 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: 25
+      - name: Build
+        run: ./gradlew build --stacktrace
       - name: Archive Artifacts (fabric)
         uses: actions/upload-artifact@v4
         if: success()
         with:
           name: Hurricane Fabric
-          path: fabric/build/libs/hurricane-fabric-*.jar
+          path: fabric/build/libs/hurricane-fabric.jar
           if-no-files-found: error
       - name: Archive Artifacts (neoforge)
         uses: actions/upload-artifact@v4
         if: success()
         with:
           name: Hurricane NeoForge
-          path: neoforge/build/libs/hurricane-neoforge-*.jar
+          path: neoforge/build/libs/hurricane-neoforge.jar
           if-no-files-found: error
