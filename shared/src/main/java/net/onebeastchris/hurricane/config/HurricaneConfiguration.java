@@ -18,9 +18,21 @@ public final class HurricaneConfiguration {
             """)
     private boolean suppressWarnings = false;
 
+    @Comment("""
+            Lets Bedrock players fight with a spear. Their client can only send a plain entity attack, which the server
+            drops for piercing weapons, so Hurricane runs the spear's own jab (the server-side raycast) instead.
+            Caveats: only players Floodgate/Geyser reports as Bedrock are affected, and the jab still uses the spear's
+            own attack cooldown, so a modified Bedrock client gains nothing a Java client does not already have.""")
+    private CombatFixes combatFixes = new CombatFixes();
+
     @SuppressWarnings("ClassEscapesDefinedScope")
     public CollisionFixes collisionFixes() {
         return collisionFixes;
+    }
+
+    @SuppressWarnings("ClassEscapesDefinedScope")
+    public CombatFixes combatFixes() {
+        return combatFixes;
     }
 
     public boolean suppressWarnings() {
@@ -36,6 +48,14 @@ public final class HurricaneConfiguration {
         }
         public boolean pointedDripstone() {
             return pointedDripstone;
+        }
+    }
+
+    @ConfigSerializable
+    static final class CombatFixes {
+        private boolean bedrockSpearStab = true;
+        public boolean bedrockSpearStab() {
+            return bedrockSpearStab;
         }
     }
 }

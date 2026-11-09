@@ -17,6 +17,7 @@ public class Config {
     private boolean suppressWarnings;
     private boolean bamboo;
     private boolean pointedDripstone;
+    private boolean bedrockSpearStab;
 
     public static boolean shouldWarn = false;
 
@@ -67,6 +68,7 @@ public class Config {
         this.bamboo = config.collisionFixes().bamboo();
         this.pointedDripstone = config.collisionFixes().pointedDripstone();
         this.suppressWarnings = config.suppressWarnings();
+        this.bedrockSpearStab = config.combatFixes().bedrockSpearStab();
     }
 
     private ConfigurationTransformation zeroToOne() {

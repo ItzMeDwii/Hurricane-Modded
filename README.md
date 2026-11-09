@@ -12,6 +12,7 @@ Fixes:
 - Bamboo and dripstone collision (by setting them to no server-side collision)
 - GeyserMC/Geyser#638 by letting the server control entities, just like Bedrock expects it to
 - optionally: suppress "Mismatch in destroy block pos" warnings
+- spear hits for Bedrock players (their entity attack is dropped for piercing weapons, so the server runs the spear's jab instead)
 
 This project is unaffiliated with GeyserMC, and this port is not supported/made by Camotoy. However, this mod is made to work with Geyser.
 If you need help/support, please use the "issues" tab here to report issues, or join the support discord: https://discord.gg/nzrJbNMR9S

@@ -3,6 +3,7 @@ Hurricane 2.2:
 - Requires Java 25 (Minecraft 26.3 class files)
 - Fixed the pointed dripstone collision fix not applying on 26.3, where `getShape` moved to `SpeleothemBlock`
 - Fixed the "Mismatch in destroy block pos" warning suppression not applying on 26.3, where the warning moved to `ServerPlayerGameMode.abortDestroyBlock`
+- Added a workaround so Bedrock players can hit entities with spears: their attacks now run the spear's jab instead of being dropped as a piercing-weapon attack
 
 Hurricane 2.1:
 - Added config version

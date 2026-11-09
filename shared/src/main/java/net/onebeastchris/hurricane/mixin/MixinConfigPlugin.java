@@ -29,6 +29,7 @@ public class MixinConfigPlugin implements IMixinConfigPlugin {
             case "net.onebeastchris.hurricane.mixin.BambooBlockMixin" -> config.isBamboo();
             case "net.onebeastchris.hurricane.mixin.SpeleothemBlockMixin" -> config.isPointedDripstone();
             case "net.onebeastchris.hurricane.mixin.ServerPlayerGameModeMixin" -> config.isSuppressWarnings();
+            case "net.onebeastchris.hurricane.mixin.ServerGamePacketListenerImplMixin" -> config.isBedrockSpearStab();
             default -> true;
         };
     }

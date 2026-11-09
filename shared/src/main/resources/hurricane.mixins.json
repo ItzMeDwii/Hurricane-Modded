@@ -5,6 +5,7 @@
   "mixins": [
     "BambooBlockMixin",
     "SpeleothemBlockMixin",
+    "ServerGamePacketListenerImplMixin",
     "ServerPlayerGameModeMixin"
   ],
   "plugin": "net.onebeastchris.hurricane.mixin.MixinConfigPlugin",
