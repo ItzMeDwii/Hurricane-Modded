@@ -1,4 +1,4 @@
-Hurricane 2.2:
+Hurricane 2.2.1:
 - Updated to Minecraft 26.3, Fabric Loader 0.20.1, Fabric API 0.165.2 and NeoForge 26.3.0.101
 - Requires Java 25 (Minecraft 26.3 class files)
 - Fixed the pointed dripstone collision fix not applying on 26.3, where `getShape` moved to `SpeleothemBlock`
