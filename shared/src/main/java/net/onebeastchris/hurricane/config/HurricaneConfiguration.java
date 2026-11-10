@@ -7,9 +7,9 @@ import org.spongepowered.configurate.objectmapping.meta.Comment;
 @SuppressWarnings({"FieldMayBeFinal", "FieldCanBeLocal"})
 public final class HurricaneConfiguration {
     @Comment("""
-            "Fixes" Bedrock players running into lagback issues on certain blocks by removing any collision detection from the given block.
-            Caveats: a custom client - Java or Bedrock - could take advantage of no collision and walk right through.
-             Additionally, placement of these blocks on both platforms may be buggier than usual.""")
+            "Fixes" Bedrock players running into lagback issues on certain blocks by ignoring the block's collision on the server for Bedrock players only.
+            Caveats: a custom Bedrock client could take advantage of no collision and walk right through.
+             Java players and mobs still collide with these blocks as usual.""")
     private CollisionFixes collisionFixes = new CollisionFixes();
 
     @Comment("""
@@ -55,6 +55,7 @@ public final class HurricaneConfiguration {
     @ConfigSerializable
     static final class CollisionFixes {
         private boolean bamboo = true;
+        @Comment("Also covers sulfur spikes - both use the same block class since 26.3.")
         private boolean pointedDripstone = true;
         public boolean bamboo() {
             return bamboo;

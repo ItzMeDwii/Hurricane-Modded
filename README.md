@@ -9,7 +9,7 @@ Issues with each workaround are listed in the config! Take your time to read the
 
 Fixes:
 
-- Bamboo and dripstone collision (by setting them to no server-side collision)
+- Bamboo, pointed dripstone and sulfur spike collision for Bedrock players (ignored on the server for Bedrock players so they stop lagging back)
 - GeyserMC/Geyser#638 by letting the server control entities, just like Bedrock expects it to
 - optionally: suppress "Mismatch in destroy block pos" warnings
 - spear hits for Bedrock players (their entity attack is dropped for piercing weapons, so the server runs the spear's jab instead)

@@ -1,3 +1,6 @@
+Hurricane 2.2.3:
+- Changed the pointed dripstone collision fix to apply to Bedrock players only (Java players and mobs keep the vanilla shape) and extended it to sulfur spikes, which share the same block class since 26.3 and rubber-band Bedrock players the same way
+
 Hurricane 2.2.2:
 - Added a time sync workaround: the world clock is re-sent to Bedrock players once a second, so their sky no longer runs ahead of the server's time of day
 
