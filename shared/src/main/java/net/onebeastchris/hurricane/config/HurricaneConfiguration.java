@@ -25,6 +25,15 @@ public final class HurricaneConfiguration {
             own attack cooldown, so a modified Bedrock client gains nothing a Java client does not already have.""")
     private CombatFixes combatFixes = new CombatFixes();
 
+    @Comment("""
+            Re-sends the world clock to Bedrock players once a second, so their sky follows the server's time of day.
+            Since 26.3 the server only sends the clock on join and on dimension changes, and Geyser advances its own
+            copy once per Geyser tick (wall-clock time, not the server's tick count), so a lagging server lets the
+            Bedrock sky run ahead - it gets dark while Java players still see day, even though gameplay follows the
+            world clock. Caveats: one small extra packet per second per Bedrock player; only players Floodgate/Geyser
+            reports as Bedrock are affected.""")
+    private boolean syncBedrockTime = true;
+
     @SuppressWarnings("ClassEscapesDefinedScope")
     public CollisionFixes collisionFixes() {
         return collisionFixes;
@@ -37,6 +46,10 @@ public final class HurricaneConfiguration {
 
     public boolean suppressWarnings() {
         return suppressWarnings;
+    }
+
+    public boolean syncBedrockTime() {
+        return syncBedrockTime;
     }
 
     @ConfigSerializable

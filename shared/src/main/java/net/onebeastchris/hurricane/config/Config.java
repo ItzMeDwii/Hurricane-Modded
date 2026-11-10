@@ -18,6 +18,7 @@ public class Config {
     private boolean bamboo;
     private boolean pointedDripstone;
     private boolean bedrockSpearStab;
+    private boolean syncBedrockTime;
 
     public static boolean shouldWarn = false;
 
@@ -69,6 +70,7 @@ public class Config {
         this.pointedDripstone = config.collisionFixes().pointedDripstone();
         this.suppressWarnings = config.suppressWarnings();
         this.bedrockSpearStab = config.combatFixes().bedrockSpearStab();
+        this.syncBedrockTime = config.syncBedrockTime();
     }
 
     private ConfigurationTransformation zeroToOne() {

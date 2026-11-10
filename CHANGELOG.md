@@ -1,3 +1,6 @@
+Hurricane 2.2.2:
+- Added a time sync workaround: the world clock is re-sent to Bedrock players once a second, so their sky no longer runs ahead of the server's time of day
+
 Hurricane 2.2.1:
 - Updated to Minecraft 26.3, Fabric Loader 0.20.1, Fabric API 0.165.2 and NeoForge 26.3.0.101
 - Requires Java 25 (Minecraft 26.3 class files)

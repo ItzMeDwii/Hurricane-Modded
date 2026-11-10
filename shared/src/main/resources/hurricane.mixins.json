@@ -6,7 +6,8 @@
     "BambooBlockMixin",
     "SpeleothemBlockMixin",
     "ServerGamePacketListenerImplMixin",
-    "ServerPlayerGameModeMixin"
+    "ServerPlayerGameModeMixin",
+    "MinecraftServerMixin"
   ],
   "plugin": "net.onebeastchris.hurricane.mixin.MixinConfigPlugin",
   "injectors": {
